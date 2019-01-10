@@ -71,7 +71,7 @@ if($opcion=='A')
         $pro = trim(fgets(STDIN));
         $query="UPDATE propietario
                   SET PRO_ESTADO=0
-                  WHERE PRO_RUT=$pro";
+                  WHERE PRO_RUT='$pro'";
 }
 echo "\n";
  if (!mysqli_query($conn,$query)) {

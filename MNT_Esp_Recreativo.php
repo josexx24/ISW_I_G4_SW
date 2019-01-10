@@ -28,7 +28,7 @@ if($opcion=='A')
         $query = "UPDATE esp_recreativo 
                   SET ESP_NOM='$com',
                       ESP_CAP=$est,
-                  WHERE ESP_COD=$esp_recs";
+                  WHERE ESP_COD='$esp_rec'";
          
  }
  elseif($opcion=='I')
@@ -50,7 +50,7 @@ if($opcion=='A')
         $esp_rec = trim(fgets(STDIN));
         $query="UPDATE esp_recreativo
                   SET ESP_ESTADO=0
-                  WHERE ESP_COD=$esp_rec";
+                  WHERE ESP_COD='$esp_rec'";
 }
 echo "\n";
  if (!mysqli_query($conn,$query)) {

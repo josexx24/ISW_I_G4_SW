@@ -31,7 +31,7 @@ if($opcion=='A')
                   SET VIV_COM='$com',
                       VIV_EST=$est,
                       VIV_BOD=$bod,
-                  WHERE VIV_COD=$viv";
+                  WHERE VIV_COD='$viv'";
          
  }
  elseif($opcion=='I')
@@ -52,10 +52,10 @@ if($opcion=='A')
 {
         echo "Eliminar en la base de datos\n";
 	echo "ID de vivienda:";
-        fscanf(STDIN,"%d\n",$viv);
+        $viv = trim(fgets(STDIN));
         $query="UPDATE vivienda
                   SET VIV_ESTADO=0
-                  WHERE VIV_COD=$viv";
+                  WHERE VIV_COD='$viv'";
 }
 echo "\n";
  if (!mysqli_query($conn,$query)) {
