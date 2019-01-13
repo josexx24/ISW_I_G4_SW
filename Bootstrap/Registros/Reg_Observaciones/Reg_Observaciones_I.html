@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Registrar Nueva Observacion</title>
+<link href="estilo.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="maindiv">
+<!--HTML Form -->
+<div class="form_div">
+<div class="title">
+<h2>Datos de Observacion</h2>
+</div>
+<form action="Reg_Observacion.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Registrar Nueva Observacion</h2>
+<input type="hidden" value="I" name="opcion"/>
+<label>Fecha y Hora de Observacion (Formato: xxxx-xx-xx xx:xx:xx):</label>
+<input class="input" name="fec_hor" type="text" value="">
+<label>ID del Empleado que Registro la Observacion:</label>
+<input class="input" name="emp" type="text" value="">
+<label>Descripcion de la Observacion:</label>
+<input class="input" name="des" type="text" value="">
+<label>Tipo De Observacion (Formato:0 normal ,1 negativa):</label>
+<input class="input" name="tip" type="text" value="">
+<label>Vivienda Involucrada en la Observacion:</label>
+<input class="input" name="viv" type="text" value="">
+<label>Propietario de la Vivienda Involucrada en la Observacion:</label>
+<input class="input" name="pro" type="text" value="">
+<input class="submit" name="submit" type="submit" value="INGRESAR">
+</form>
+</div>
+</div>
+
+</body>

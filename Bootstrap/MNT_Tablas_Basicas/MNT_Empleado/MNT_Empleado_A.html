@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Actualizar Datos de Empleado</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="maindiv">
+<!--HTML Form -->
+<div class="form_div">
+<div class="title">
+<h2>Datos de Empleado</h2>
+</div>
+<form action="MNT_Empleado.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Actualizar Datos de Empleado</h2>
+<input type="hidden" value="A" name="opcion"/>
+<label>ID de Empleado:</label>
+<input class="input" name="emp" type="text" value="">
+<label>Nombre:</label>
+<input class="input" name="nom" type="text" value="">
+<label>Apellido Paterno:</label>
+<input class="input" name="ape1" type="text" value="">
+<label>Apellido Materno:</label>
+<input class="input" name="ape2" type="text" value="">
+<label>Telefono:</label>
+<input class="input" name="tel" type="text" value="">
+<input class="submit" name="submit" type="submit" value="INGRESAR">
+</form>
+</div>
+</div>
+
+</body>

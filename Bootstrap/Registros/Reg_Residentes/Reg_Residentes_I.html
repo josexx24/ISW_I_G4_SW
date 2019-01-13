@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Registrar Nuevo Residente</title>
+<link href="estilo.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="maindiv">
+<!--HTML Form -->
+<div class="form_div">
+<div class="title">
+<h2>Datos de Residente</h2>
+</div>
+<form action="Reg_Residente.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Registrar Nuevo Residente</h2>
+<input type="hidden" value="I" name="opcion"/>
+<label>ID de Residente:</label>
+<input class="input" name="res" type="text" value="">
+<label>Nombre de Residente:</label>
+<input class="input" name="nom" type="text" value="">
+<label>Apellido Paterno de Residente:</label>
+<input class="input" name="ape1" type="text" value="">
+<label>Apellido Materno de Residente:</label>
+<input class="input" name="ape2" type="text" value="">
+<label>Vivienda donde Reside:</label>
+<input class="input" name="viv" type="text" value="">
+<label>Propietario de Vivienda donde Reside:</label>
+<input class="input" name="pro" type="text" value="">
+<label>Telefono (Formato: (569)xxx-xxxx):</label>
+<input class="input" name="tel" type="text" value="">
+<label>Email de Residente:</label>
+<input class="input" name="email" type="text" value="">
+<input class="submit" name="submit" type="submit" value="INGRESAR">
+</form>
+</div>
+</div>
+
+</body>

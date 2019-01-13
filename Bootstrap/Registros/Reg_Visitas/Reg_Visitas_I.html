@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Registrar Nueva Visita</title>
+<link href="estilo.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="maindiv">
+<!--HTML Form -->
+<div class="form_div">
+<div class="title">
+<h2>Datos de Visita</h2>
+</div>
+<form action="Reg_Visita.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Registrar Nueva Visita</h2>
+<input type="hidden" value="I" name="opcion"/>
+<label>Rut de Visita:</label>
+<input class="input" name="rut" type="text" value="">
+<label>Nombre de Visita:</label>
+<input class="input" name="nom" type="text" value="">
+<label>Apellido Paterno de Visita:</label>
+<input class="input" name="ape1" type="text" value="">
+<label>Apellido Materno de Visita:</label>
+<input class="input" name="ape2" type="text" value="">
+<label>Fecha y hora de Visita (Formato: xxxx-xx-xx xx:xx:xx):</label>
+<input class="input" name="fec_hor" type="text" value="">
+<label>Vivienda Visitada:</label>
+<input class="input" name="viv" type="text" value="">
+<label>Propietario de Vivienda visitada:</label>
+<input class="input" name="pro" type="text" value="">
+<input class="submit" name="submit" type="submit" value="INGRESAR">
+</form>
+</div>
+</div>
+
+</body>

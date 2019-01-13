@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ingresar Nuevo Propietario</title>
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="maindiv">
+<!--HTML Form -->
+<div class="form_div">
+<div class="title">
+<h2>Datos de Propietario</h2>
+</div>
+<form action="MNT_Propietario.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Ingresar Nuevo Propietario</h2>
+<input type="hidden" value="I" name="opcion"/>
+<label>Rut de Propietario:</label>
+<input class="input" name="pro" type="text" value="">
+<label>Nombre:</label>
+<input class="input" name="nom" type="text" value="">
+<label>Apellido Paterno:</label>
+<input class="input" name="ape1" type="text" value="">
+<label>Apellido Materno:</label>
+<input class="input" name="ape2" type="text" value="">
+<label>Fecha (Formato:xxxx-xx-xx):</label>
+<input class="input" name="dat" type="text" value="">
+<label>Telefono (Formato (569)xxx-xxxx):</label>
+<input class="input" name="tel" type="text" value="">
+<label>Email:</label>
+<input class="input" name="email" type="text" value="">
+<input class="submit" name="submit" type="submit" value="INGRESAR">
+</form>
+</div>
+</div>
+
+</body>

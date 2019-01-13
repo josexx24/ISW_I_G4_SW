@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Actualizar Datos de Complejo Habitacional</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="maindiv">
+<!--HTML Form -->
+<div class="form_div">
+<div class="title">
+<h2>Datos de Complejo Habitacional</h2>
+</div>
+<form action="MNT_COM.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Actualizar Datos de Complejo Habitacional</h2>
+<input type="hidden" value="A" name="opcion"/>
+<label>ID de Complejo Habitacional:</label>
+<input class="input" name="com" type="text" value="">
+<label>Nombre de Complejo Habitacional:</label>
+<input class="input" name="nom" type="text" value="">
+<label>Tipo de Complejo Habitacional:</label>
+<input class="input" name="tip" type="text" value="">
+<label>Dirección Complejo Habitacional (Formato: Calle numero,ciudad):</label>
+<input class="input" name="dir" type="text" value="">
+<input class="submit" name="submit" type="submit" value="INGRESAR">
+</form>
+</div>
+</div>
+
+</body>

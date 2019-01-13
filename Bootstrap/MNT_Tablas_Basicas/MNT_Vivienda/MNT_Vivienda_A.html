@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Actualizar Datos de Vivienda</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="maindiv">
+<!--HTML Form -->
+<div class="form_div">
+<div class="title">
+<h2>Datos de Vivienda</h2>
+</div>
+<form action="MNT_Vivienda.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Actualizar Datos de Vivienda</h2>
+<input type="hidden" value="A" name="opcion"/>
+<label>Codigo de Vivienda:</label>
+<input class="input" name="viv" type="text" value="">
+<label>Codigo de Complejo Habitacional:</label>
+<input class="input" name="com" type="text" value="">
+<label>ID Estacionamiento:</label>
+<input class="input" name="est" type="text" value="">
+<label>ID Bodega:</label>
+<input class="input" name="bod" type="text" value="">
+<input class="submit" name="submit" type="submit" value="INGRESAR">
+</form>
+</div>
+</div>
+
+</body>
